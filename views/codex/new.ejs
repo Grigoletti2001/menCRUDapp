@@ -1,0 +1,44 @@
+<%- include('./partials/header.ejs') %>
+
+
+      type:String,
+        require:false, 
+     author: {
+        type: String,
+        require: false, 
+    added-to-collection: 
+     { type: Date, default: Date.now },
+
+});
+
+
+
+<h1>Add a new codex type book</h1>
+<form>
+
+<fieldset>
+		<label for="title">Title:</label>
+		<input id="title" type='text' name='title' placeholder="Enter the title of the book"/>	
+    </fieldset>
+    <br>
+<fieldset>
+		<label for="author">Author:</label>
+		<input id="author" type='text' name='author' placeholder="Enter the author of the book"/>	
+    </fieldset>
+    <br>
+    <fieldset>
+		<label for="date">Title:</label>
+		<input id="date" type='date' name='date' placeholder="enter the date"/>	
+	</fieldset>
+
+<br><br>
+	<button>Add the song</button>
+
+</form>
+
+
+
+
+
+
+<%- include('./partials/footer.ejs') %>

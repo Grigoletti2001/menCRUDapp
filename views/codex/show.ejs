@@ -1,0 +1,45 @@
+<%- include('./partials/header.ejs') %>
+
+<h1> <%= codex.title %> </h1>
+<br>
+<article>this book is by, <a href='/codex/<%=codex.author.id%>'</a></a>
+<br></article>
+<br>
+
+
+<p>Edit the author info.
+      <p><a href="/codex/<%=author.id%>/edit">edit me!</a></p>
+
+</p>
+
+<br>
+
+<p>Post the author info.
+
+       <form method="POST" action="/codex/<%= idOfItemToDelete %>?_method=DELETE">
+
+</p>
+<br>
+
+<p>Delete the author info.
+
+        <button>Delete <%= codex.author %></button>
+
+</p>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer.ejs') %>
